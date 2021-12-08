@@ -6,7 +6,7 @@ const closeMenu = (nav, activeClass) => {
   nav.classList.remove(activeClass);
 };
 
-const slideMenu = ({ menu, classActiveMenu, openBtn, closeTrigger } = {}) => {
+export const slideMenu = ({ menu, classActiveMenu, openBtn, closeTrigger } = {}) => {
   const navBtnOpen = document.querySelector(openBtn);
   const navCloseTriggers = document.querySelectorAll(closeTrigger.join(", "));
   const navMenu = document.querySelector(menu);
@@ -22,4 +22,3 @@ const slideMenu = ({ menu, classActiveMenu, openBtn, closeTrigger } = {}) => {
   });
 };
 
-export default slideMenu;
