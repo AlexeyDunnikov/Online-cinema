@@ -16,7 +16,21 @@ const getData = async (url) => {
   }
 };
 
-export const getTrends = async ({ type = "all", period = "week", page = 1 } = {}) => {
+export const getTrends = async ({
+  type = "all",
+  period = "week",
+  page = 1,
+} = {}) => {
   const url = `${BASE_URL}trending/${type}/${period}?api_key=${API_KEY}${LANGUAGE}&page=${page}`;
+  return await getData(url);
+};
+
+export const getPopular = async ({ genre, page } = {}) => {
+  const url = `${BASE_URL}${genre}/popular?api_key=${API_KEY}${LANGUAGE}&page=${page}`;
+  return await getData(url);
+};
+
+export const getTop = async ({ genre, page } = {}) => {
+  const url = `${BASE_URL}${genre}/top_rated?api_key=${API_KEY}${LANGUAGE}&page=${page}`;
   return await getData(url);
 };

@@ -61,118 +61,17 @@
     </header>
 
     <main>
-      <section class="film-week">
-        
-      </section>
+      <section class="film-week"></section>
 
       <section class="other-films">
         <div class="container">
           <h2 class="other-films__title">
             Другие фильмы
-            <span class="other-films__title-add">на Methed Cinema</span>
+            <span class="other-films__title-add">на Alex Cinema</span>
           </h2>
 
           <ul class="other-films__list">
-            <li class="other-films__item">
-              <a class="other-films__link" data-rating="8.7">
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d9s5Ma2BC7y3A8sMpxqbxWj9VQA.jpg"
-                  alt="постер"
-                />
-              </a>
-            </li>
-            <li class="other-films__item">
-              <a
-                class="other-films__link"
-                data-rating="7.6"
-                href="https://youtu.be/N1r36HTysDM"
-              >
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jycSKuZ4CvgPWRHdhgPA9q1EC8n.jpg"
-                  alt="постер"
-                />
-              </a>
-            </li>
-            <li class="other-films__item">
-              <a
-                class="other-films__link"
-                data-rating="7.9"
-                href="https://youtu.be/MLj1nXTqc3g"
-              >
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hn0B1OFQRQnzr0LeLkaUbJxoiol.jpg"
-                  alt="постер"
-                />
-              </a>
-            </li>
-            <li class="other-films__item">
-              <a
-                class="other-films__link"
-                data-rating="7.6"
-                href="https://youtu.be/Q50TXqNSGi8"
-              >
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/s8hSilfVBsQ4jWtwucADeSromd2.jpg"
-                  alt="постер"
-                />
-              </a>
-            </li>
-            <li class="other-films__item">
-              <a
-                class="other-films__link"
-                data-rating="6.8"
-                href="https://youtu.be/U9TkWe60dSQ"
-              >
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u6m4JTp9ZEAF25mSo0xfStmXSHh.jpg"
-                  alt="постер"
-                />
-              </a>
-            </li>
-            <li class="other-films__item">
-              <a
-                class="other-films__link"
-                data-rating="8"
-                href="https://youtu.be/Q6nepw3fskg"
-              >
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/irwFnLniLSu0KkiK7FMAgLounCX.jpg"
-                  alt="постер"
-                />
-              </a>
-            </li>
-            <li class="other-films__item">
-              <a
-                class="other-films__link"
-                data-rating="7.8"
-                href="https://youtu.be/6sI7pZuQZPg"
-              >
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6zHKgCKht3vwrtSXFvSUntSRsJh.jpg"
-                  alt="постер undefined"
-                />
-              </a>
-            </li>
-            <li class="other-films__item">
-              <a
-                class="other-films__link"
-                data-rating="9.2"
-                href="https://youtu.be/Cd1ruAVbazU"
-              >
-                <img
-                  class="other-films__img"
-                  src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tTR8Qhk7RIirkcQuKfU8EJNJ9O2.jpg"
-                  alt="постер undefined"
-                />
-              </a>
-            </li>
+           
           </ul>
         </div>
       </section>
@@ -203,7 +102,7 @@
             <li class="subnav__item">
               <a
                 href="#"
-                class="subnav__link get-nav__link get-nav__link_triends"
+                class="subnav__link get-nav__link get-nav__link_triends" data-type='trends'
                 >В тренде</a
               >
             </li>
@@ -211,7 +110,7 @@
             <li class="subnav__item">
               <a
                 href="#"
-                class="subnav__link get-nav__link get-nav__link_popular-movies"
+                class="subnav__link get-nav__link get-nav__link_popular-movies"  data-type='popular' data-genre="movie"
                 >Популярные Фильмы</a
               >
             </li>
@@ -219,7 +118,7 @@
             <li class="subnav__item">
               <a
                 href="#"
-                class="subnav__link get-nav__link get-nav__link_popular-tv"
+                class="subnav__link get-nav__link get-nav__link_popular-tv" data-type='popular' data-genre="tv"
                 >Популярные сериалы</a
               >
             </li>
@@ -227,7 +126,7 @@
             <li class="subnav__item">
               <a
                 href="#"
-                class="subnav__link get-nav__link get-nav__link_top-movies"
+                class="subnav__link get-nav__link get-nav__link_top-movies" data-type='top' data-genre="movie"
                 >Top Фильмов</a
               >
             </li>
@@ -235,7 +134,7 @@
             <li class="subnav__item">
               <a
                 href="#"
-                class="subnav__link get-nav__link get-nav__link_top-tv"
+                class="subnav__link get-nav__link get-nav__link_top-tv" data-type='top' data-genre="tv"
                 >Top Сериалы</a
               >
             </li>
@@ -269,7 +168,7 @@
         <li class="navigation__item">
           <a
             href="#"
-            class="navigation__link get-nav__link get-nav__link_triends"
+            class="navigation__link get-nav__link get-nav__link_triends" data-type='trends'
             >В тренде</a
           >
         </li>
@@ -277,7 +176,7 @@
         <li class="navigation__item">
           <a
             href="#"
-            class="navigation__link get-nav__link get-nav__link_popular-movies"
+            class="navigation__link get-nav__link get-nav__link_popular-movies" data-type='popular' data-genre="movie"
             >Популярные Фильмы</a
           >
         </li>
@@ -285,7 +184,7 @@
         <li class="navigation__item">
           <a
             href="#"
-            class="navigation__link get-nav__link get-nav__link_popular-tv"
+            class="navigation__link get-nav__link get-nav__link_popular-tv" data-type='popular' data-genre="tv"
             >Популярные сериалы</a
           >
         </li>
@@ -293,7 +192,7 @@
         <li class="navigation__item">
           <a
             href="#"
-            class="navigation__link get-nav__link get-nav__link_top-movies"
+            class="navigation__link get-nav__link get-nav__link_top-movies" data-type='top' data-genre="movie"
             >Top Фильмов</a
           >
         </li>
@@ -301,7 +200,7 @@
         <li class="navigation__item">
           <a
             href="#"
-            class="navigation__link get-nav__link get-nav__link_top-tv"
+            class="navigation__link get-nav__link get-nav__link_top-tv" data-type='top' data-genre="tv"
             >Top Сериалы</a
           >
         </li>
@@ -338,6 +237,23 @@
           aria-label="смотреть трейлер"
         ></a>
       </div>
+    </template>
+
+    <template class="other-films__item-template">
+      <li class="other-films__item">
+        <a
+          class="other-films__link"
+          data-rating="7.8"
+          href="https://youtu.be/6sI7pZuQZPg"
+        >
+          
+          <img
+            class="other-films__img"
+            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6zHKgCKht3vwrtSXFvSUntSRsJh.jpg"
+            alt="постер undefined"
+          />
+        </a>
+      </li>
     </template>
 
     <script type="module" src="js/index.js"></script>

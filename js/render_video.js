@@ -1,12 +1,12 @@
-import { getTrends } from "./services.js";
+import { getTrends, getPopular, getTop } from "./services.js";
+import { renderCards } from "./renderCards.js";
 
 const filmWeek = document.querySelector(".film-week");
 const filmWeekTmp = document.querySelector(".film-week-template");
 
 const firstRender = (data) => {
-  console.log(data);
-    const filmNameOriginal = data.original_title ?? data.original_name;
-    const filmNameTranslated = data.title ?? data.name;
+  const filmNameOriginal = data.original_title ?? data.original_name;
+  const filmNameTranslated = data.title ?? data.name;
 
   const filmWeekCloned = filmWeekTmp.content.cloneNode(true);
 
@@ -37,10 +37,14 @@ const firstRender = (data) => {
 
 export const renderVideo = async () => {
   const data = await getTrends({
-      type: 'movies',
-      period: 'day',
-      page: 3,
+    type: "movies",
+    period: "day",
+    page: 1,
   });
 
-  firstRender(data.results[0]);
+  const [firstCard, ...otherCard] = data.results;
+
+  firstRender(firstCard);
+
+  renderCards(otherCard);
 };
