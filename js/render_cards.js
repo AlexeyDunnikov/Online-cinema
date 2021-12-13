@@ -31,7 +31,7 @@ export const renderCards = (dataArr) => {
         otherFilmCloned.querySelector(".other-films__img");
       const posterPath = data.poster_path
         ? `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${data.poster_path}`
-        : "./../img/no-poster.jpg";
+        : "./img/no-poster.jpg";
       otherFilmBackground.src = posterPath;
       otherFilmBackground.alt = `Постер ${filmNameTranslated}`;
 
