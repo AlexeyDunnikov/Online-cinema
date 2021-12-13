@@ -1,9 +1,7 @@
 import { slideMenu } from "./menu.js";
 import { renderVideo } from "./render_video.js";
 import { menuLinks } from "./menu_links.js";
-
-const MOVIE = "movie";
-const TV = "tv";
+import { search } from "./search.js";
 
 slideMenu({
   menu: ".navigation",
@@ -13,5 +11,5 @@ slideMenu({
 });
 
 menuLinks();
-
 renderVideo();
+search();
